@@ -13,8 +13,14 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE,comment = "", fig.align = 'center',
+knitr::opts_chunk$set(echo = FALSE, comment = "", 
+                      fig.align = 'center',
 					  fig.width = 11, fig.height = 7)
+```
+
+```{r, setup, include=FALSE}
+# Set knit directory
+knitr::opts_knit$set(root.dir = '/')
 ```
 
 
@@ -26,8 +32,8 @@ knitr::opts_chunk$set(autodep        = TRUE,
                       cache          = FALSE,
                       cache.comments = TRUE,
                       
-                      # Save a pdf_copy?
-                      #dev            = c( "png", "pdf"),
+                      # Save figures as pdf ?
+                      # dev = c( "png", "pdf"),
                   
                       # Include code?
                       echo           = FALSE,
@@ -35,7 +41,8 @@ knitr::opts_chunk$set(autodep        = TRUE,
                       error          = FALSE,
                       fig.align      = "center",
                       
-                      # Path where figures are going to be store pdf single figures
+                      # Path where figures are going to be store pdf single 
+                      # figures
                       qqqqqq
                       fig.path       = paste0("./figures_[insert_name]", "/"),
                       fig.width      = 11,
@@ -45,20 +52,18 @@ knitr::opts_chunk$set(autodep        = TRUE,
 ```
 
 ```{r cleanup-docs, cache = FALSE,echo = FALSE}
-
-# # save a html copy file in a specific place
+# save a html copy file in a specific place
 # doc.files <- c(list.files(pattern = "pdf"),
 #                list.files(pattern = "html"),
 #                list.files(pattern = "docx"))
 # 
-# for (file in doc.files) {
-#   qqqqqq
-#     file.rename(file, file.path("../../hw1/", file))
+# for (file in doc.files) {   
+#     file.rename(file, file.path("../../[insert_folder_name]/", file))
 # }
 ```
 
 
-```{r libaries, message=FALSE, warning=FALSE, cache=FALSE}
+```{r libaries, message = FALSE, warning = FALSE, cache = FALSE}
 
 ```
 
